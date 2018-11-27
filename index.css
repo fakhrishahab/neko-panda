@@ -1,6 +1,10 @@
 @import "./container.css";
 @import "./header.css";
 
+.homepage{
+    height: 80vh;
+}
+
 .homepage p{
     text-align: justify;
     font-size: 14px;

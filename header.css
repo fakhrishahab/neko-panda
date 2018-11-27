@@ -63,7 +63,7 @@ body{
 .footer{
     background: #666;
     width: 100%;
-    position: fixed;
+    /* position: fixed; */
     bottom: 0;
     height: 30px;
     padding-top:15px;
