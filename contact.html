@@ -102,9 +102,13 @@
 				var nama = $('#nama').val();
 				var pesan = $('#pesan').val();
 				var email = $('#email').val();
+				var d=new Date();
 				if(nama.length > 0 && pesan.length > 0 && email.length > 0){
 					alert('Terimakasih, surat penggemar NekoPanda.com sukses terkirim dan diterima oleh redaksi.')
-					$('#commentUl').append('<li><b>' + nama + '</b><br/>' + pesan +'</li>');
+					$('#commentUl').append('<li><b>' + nama + ' - ' + d.getDate() + '</b><br/>' + pesan +'</li>');
+				}
+				else{
+					alert('Tolong dilengkapi ya data anda.')
 				}
 			});
 		});
