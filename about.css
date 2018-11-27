@@ -1,0 +1,6 @@
+@import "./container.css";
+@import "./header.css";
+
+.about{
+    margin-top: 20px;
+}

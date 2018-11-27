@@ -4,11 +4,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Neko Panda</title>
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./about.css">
 </head>
 <body>
-    <iframe src="./header.html" frameborder="0" class="header-frame"></iframe>
-    <div class="about">
+        <div class="header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3 header-logo">
+                            <img src="./assets/nekopanda.png" alt="">
+                            <span>NekoPanda</span>
+                        </div>
+                        <div class="col-9">
+                            <ul class="header-nav">
+                                <li class="header-nav-item" data-index="index.html">
+                                    <a href="./index.html">Home</a>
+                                </li>
+                                <li class="header-nav-item" data-index="gallery.html">
+                                    <a href="./gallery.html">Gallery</a>
+                                </li>
+                                <li class="header-nav-item" data-index="habitat.html">
+                                    <a href="./habitat.html">Habitat</a>
+                                </li>
+                                <li class="header-nav-item" data-index="about.html">
+                                    <a href="./about.html">Tentang kami</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <!-- <iframe src="./header.html" frameborder="0" class="header-frame"></iframe> -->
+    <div class="about container">
         <div class="row">
             <div class="col-12">
                 <div class="about">
@@ -29,5 +55,9 @@
             </div>
         </div>
     </div>
+
+
+    <script src="jquery.js"></script>
+    <script src="header.js"></script>
 </body>
 </html>
