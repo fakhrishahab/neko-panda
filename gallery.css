@@ -100,6 +100,7 @@
 .video-content iframe{
     /* width: 400px; */
     height: 250px;
+    background-color: #CCC;
 }
 
 .video-content > div{
