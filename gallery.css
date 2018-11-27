@@ -91,3 +91,17 @@
     object-fit: cover;
     margin: 0 auto;
 }
+
+.video-wrapper{
+    margin-top: 30px;
+}
+
+.video-content iframe{
+    /* width: 400px; */
+    height: 250px;
+}
+
+.video-content > div{
+    text-align: center;
+    margin-top: 20px;
+}
