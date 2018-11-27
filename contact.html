@@ -1,0 +1,104 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Neko Panda</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <!-- <iframe src="./header.html" frameborder="0" class="header-frame"></iframe> -->
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-3 header-logo">
+                    <img src="./assets/nekopanda.png" alt="">
+                    <span>NekoPanda</span>
+                </div>
+                <div class="col-9">
+                    <ul class="header-nav">
+                        <li class="header-nav-item" data-index="index.html">
+                            <a href="./index.html">Home</a>
+                        </li>
+                        <li class="header-nav-item" data-index="gallery.html">
+                            <a href="./gallery.html">Gallery</a>
+                        </li>
+                        <li class="header-nav-item" data-index="habitat.html">
+                            <a href="./habitat.html">Habitat</a>
+                        </li>
+                        <li class="header-nav-item" data-index="about.html">
+                            <a href="./about.html">Tentang kami</a>
+                        </li>
+						<li class="header-nav-item" data-index="contact.html">
+							<a href="./contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="homepage">
+                    <h1 class="homepage-title">
+                        Hubungi Kami
+                    </h1>
+					
+					<div style="font-weight:bold;">
+					PT. MetraPlasa<br/>
+					Jakarta Selatan 12345<br/>
+					+62 12345678910<br/>
+					</div>
+					<table>
+						<tr>
+							<td>Nama</td>
+						</tr>
+						<tr>
+							<td><input type="text" id="nama"></td>
+						</tr>
+						<tr>
+							<td>Email</td>
+						</tr>
+						<tr>
+							<td><input type="text" id="email"></td>
+						</tr>
+						<tr>
+							<td>Pesan</td>
+						</tr>
+						<tr>
+							<td><textarea id="pesan" cols="50" rows="5"> </textarea></td>
+						</tr>
+					</table>
+					<input type="button" value="Submit" id="submitEmail" />
+					
+					<div style="margin-top:20px;" id="commentDiv">
+						<ul id="commentUl">
+						
+						</ul>
+					</div>
+                </div>
+				<br/>
+				
+            </div>
+        </div>
+    </div>
+	
+    <script src="jquery.js"></script>
+    <script src="header.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('#submitEmail').click(function(){
+				var nama = $('#nama').val();
+				var pesan = $('#pesan').val();
+				var email = $('#email').val();
+				if(nama.length > 0 && pesan.length > 0 && email.length > 0){
+					alert('Terimakasih, surat penggemar NekoPanda.com sukses terkirim dan diterima oleh redaksi.')
+					$('#commentUl').append('<li><b>' + nama + '</b><br/>' + pesan +'</li>');
+				}
+			});
+		});
+	</script>
+</body>
+</html>
